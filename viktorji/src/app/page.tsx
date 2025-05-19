@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-10 w-full md:w-3/4 p-6">
       {/* Header */}
-      <header className="flex md:flex-row items-center justify-left text-center gap-20 mb-5">
+      <header className="flex flex-col lg:flex-row items-center justify-left text-center gap-10 mb-5">
         <Image
           src="/me.jpeg"
           alt="Your Name"
@@ -15,9 +15,9 @@ export default function Home() {
           height={400}
           className="shadow-lg object-cover rounded-2xl"
         />
-        <div className="flex-col space-y-8 ">
-          <h1 className="text-6xl font-bold mt-6">Viktor Ji</h1>
-          <p className="text-2xl text-white mt-2">Software Engineer</p>
+        <div className="flex-col space-y-5 ">
+          <h1 className="text-5xl font-bold ">Viktor Ji</h1>
+          <p className="text-xl text-white mt-2">Software Engineer</p>
           {SocialLinks()}
         </div>
       </header>
