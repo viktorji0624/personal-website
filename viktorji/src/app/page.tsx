@@ -28,7 +28,7 @@ export default function Home() {
           About
         </h2>
         <div>
-          Hi! I'm Viktor Ji, an experienced software engineer who enjoys
+          Hi! I&apos;m Viktor Ji, an experienced software engineer who enjoys
           building and solving real world problems. This is my personal website
           where I showcase my work and also acts a a playing ground for me to
           experiment new technologies. I am currently pursuing a Master's degree
