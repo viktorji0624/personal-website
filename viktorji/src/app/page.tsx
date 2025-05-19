@@ -6,23 +6,23 @@ import { Mail, ExternalLink } from "lucide-react";
 export default function Home() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-10 w-full md:w-3/4 p-6">
+      {/* Header */}
+      <header className="flex md:flex-row items-center justify-left text-center gap-20 mb-5">
+        <Image
+          src="/me.jpeg"
+          alt="Your Name"
+          width={400}
+          height={400}
+          className="shadow-lg object-cover rounded-2xl"
+        />
+        <div className="flex-col space-y-8 ">
+          <h1 className="text-6xl font-bold mt-6">Viktor Ji</h1>
+          <p className="text-2xl text-white mt-2">Software Engineer</p>
+          {SocialLinks()}
+        </div>
+      </header>
       {/* About */}
       <section className="mb-10" id="about">
-        {/* Header */}
-        <header className="text-center mb-12">
-          <div className="flex justify-center">
-            <Image
-              src="/me.jpeg"
-              alt="Your Name"
-              width={300}
-              height={300}
-              className="shadow-lg object-cover"
-            />
-          </div>
-          <h1 className="text-4xl font-bold mt-6">Viktor Ji</h1>
-          <p className="text-lg text-white mt-2">Software Engineer</p>
-          {SocialLinks()}
-        </header>
         <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
           About
         </h2>
