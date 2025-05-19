@@ -50,13 +50,17 @@ export default function Home() {
           Education
         </h2>
         <div>
-          <h3 className="text-lg font-medium">Carnegie Mellon University</h3>
+          <h3 className="text-lg font-medium">
+            Carnegie Mellon University - School of Computer Science
+          </h3>
           <p className="text-sm text-gray-600">
             M.S. in Software Engineering — Dec 2026 (Expected)
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-medium mt-4">University of Michigan</h3>
+          <h3 className="text-lg font-medium mt-4">
+            University of Michigan - Ann Arbor
+          </h3>
           <p className="text-sm text-gray-600">
             B.S. in Computer Science — May 2022
           </p>
