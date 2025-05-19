@@ -35,9 +35,8 @@ export default function Home() {
           </li>
           <li>
             I am currently pursuing my Master&apos;s degree at Carnegie Mellon
-            University - School of Computer Science, where I am honing my skills
-            in developing distributed systems, software engineering, and
-            artificial intelligence.
+            University where I am honing my skills in developing distributed
+            systems, software engineering, and artificial intelligence.
           </li>
           <li>
             In my free time, I enjoy playing competitive volleyball, travelling,
