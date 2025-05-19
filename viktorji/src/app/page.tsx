@@ -32,8 +32,8 @@ export default function Home() {
           building and solving real world problems. This is my personal website
           where I showcase my work and also acts a a playing ground for me to
           experiment new technologies. I am currently pursuing a Master's degree
-          in at Carnegie Mellon University - School of Computer Science, where I
-          am honing my skills in developing distributed systems and software
+          at Carnegie Mellon University - School of Computer Science, where I am
+          honing my skills in developing distributed systems and software
           engineering.
         </div>
       </section>
