@@ -1,28 +1,28 @@
 // app/page.tsx (for Next.js App Router) or pages/index.tsx (for Pages Router)
 import Image from "next/image";
 import SocialLinks from "./components/socials";
+import { Mail } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-10">
-      {/* Header */}
-      <header className="text-center mb-12">
-        <div className="flex justify-center">
-          <Image
-            src="/me.jpeg"
-            alt="Your Name"
-            width={300}
-            height={300}
-            className="shadow-lg object-cover"
-          />
-        </div>
-        <h1 className="text-4xl font-bold mt-6">Viktor Ji</h1>
-        <p className="text-lg text-white mt-2">Software Engineer</p>
-        {SocialLinks()}
-      </header>
-
+    <main className="max-w-4xl mx-auto px-4 py-10 w-full md:w-3/4 p-6">
       {/* About */}
       <section className="mb-10" id="about">
+        {/* Header */}
+        <header className="text-center mb-12">
+          <div className="flex justify-center">
+            <Image
+              src="/me.jpeg"
+              alt="Your Name"
+              width={300}
+              height={300}
+              className="shadow-lg object-cover"
+            />
+          </div>
+          <h1 className="text-4xl font-bold mt-6">Viktor Ji</h1>
+          <p className="text-lg text-white mt-2">Software Engineer</p>
+          {SocialLinks()}
+        </header>
         <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
           About
         </h2>
@@ -89,6 +89,20 @@ export default function Home() {
           <p className="text-sm text-gray-400">2021, Budapest, Hungary</p>
           <ul className="list-disc list-inside text-sm text-gray-700 mt-2"></ul>
         </div>
+      </section>
+
+      {/* Contact */}
+      <section className="mb-10" id="contact">
+        <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
+          Feel free to reach out!
+        </h2>
+        <a
+          href="mailto:viktorj@andrew.cmu.edu"
+          className="hover:text-red-500 transition flex items-center gap-2"
+          title="Email"
+        >
+          <Mail size={28} /> viktorj@andrew.cmu.edu
+        </a>
       </section>
 
       {/* Optional: Footer */}
