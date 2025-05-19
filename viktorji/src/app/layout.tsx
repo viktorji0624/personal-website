@@ -29,6 +29,9 @@ export default function RootLayout({
               <a href="#work" className="hover:underline">
                 Work Experience
               </a>
+              <a href="#projects" className="hover:underline">
+                Projects
+              </a>
               <a href="#contact" className="hover:underline">
                 Contact
               </a>
