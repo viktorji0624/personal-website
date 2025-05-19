@@ -1,7 +1,7 @@
 // app/page.tsx (for Next.js App Router) or pages/index.tsx (for Pages Router)
 import Image from "next/image";
 import SocialLinks from "./components/socials";
-import { Mail } from "lucide-react";
+import { Mail, ExternalLink } from "lucide-react";
 
 export default function Home() {
   return (
@@ -31,18 +31,24 @@ export default function Home() {
             Hi! I&apos;m Viktor, an experienced software engineer who enjoys
             building and solving real world problems. This is my personal
             website where I showcase my work and also acts a a playing ground
-            for me to experiment with new technologies.
+            for me to experiment with new technologies. In my free time, I enjoy
+            playing competitive volleyball, travelling, reading History, going
+            to the gym and playing video games.
           </li>
           <li>
             I am currently pursuing my Master&apos;s degree at Carnegie Mellon
-            University where I am honing my skills in developing distributed
-            systems, software engineering, and artificial intelligence.
+            University where I am honing my skills in distributed systems,
+            software engineering, and artificial intelligence.
           </li>
           <li>
-            In my free time, I enjoy playing competitive volleyball, travelling,
-            reading History, going to the gym and playing video games.
+            I spent two years working in the Bay Area for a healthcare
+            technology company and interned at a large FinTech company prior. I
+            learned a great deal about developing production level software and
+            working in cross-functional teams. (Detailed work experience in
+            Resume)
           </li>
-          <li className="font-bold">
+
+          <li className="font-bold text-yellow-400">
             Currently open to internship opportunities for Summer 2026 and full
             time roles after December 2026!
           </li>
@@ -50,12 +56,19 @@ export default function Home() {
       </section>
 
       {/* Education */}
+
       <section className="mb-10" id="education">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
           Education
         </h2>
         <div className="flex items-start gap-4 mb-6">
-          <Image src="/CMU.png" className="w-10 h-10 mt-1" alt={"CMU LOGO"} />
+          <Image
+            src="/CMU.png"
+            className="w-10 h-10 mt-1"
+            alt={"CMU LOGO"}
+            width={40}
+            height={40}
+          />
           <h3 className="text-lg font-medium">
             Carnegie Mellon University - School of Computer Science
             <p className="text-sm text-gray-400">
@@ -69,6 +82,8 @@ export default function Home() {
             src="/UMICH.jpg"
             className="w-10 h-10 mt-1"
             alt={"UMICH LOGO"}
+            width={40}
+            height={40}
           />
           <h3 className="text-lg font-medium">
             University of Michigan - Ann Arbor
@@ -84,51 +99,89 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
           Work Experience
         </h2>
-        <div>
-          <h3 className="text-lg font-medium">Forward, Software Engineer</h3>
-          <span className="text-sm text-gray-400">
-            2022–2024, San Francisco, CA
-          </span>
-          <ul className="list-disc list-inside text-sm text-gray-700 mt-2"></ul>
-        </div>
-        <div>
-          <h3 className="text-lg font-medium">
-            Wise, Software Engineer Intern
-          </h3>
-          <p className="text-sm text-gray-400">2021, Budapest, Hungary</p>
-          <ul className="list-disc list-inside text-sm text-gray-700 mt-2"></ul>
+        <div className="flex space-x-10">
+          <div>
+            <h3 className="text-xl">Forward - Clinical Software Engineer</h3>
+            <p className="text-sm text-gray-400">
+              2022–2024, San Francisco, CA
+            </p>
+            <ul className="list-disc list-inside">
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=yy3WyaaJBPo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-300 hover:text-blue-600 transition"
+                  title="Visit Website"
+                >
+                  Core contributor to the launch of CarePods
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-medium">
+              Wise - Software Engineer Intern
+            </h3>
+            <p className="text-sm text-gray-400">2021, Budapest, Hungary</p>
+            <ul className="list-disc list-inside">
+              <li>
+                <a
+                  href="https://wise.com/help/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-300 hover:text-blue-600 transition"
+                  title="Visit Website"
+                >
+                  Developed the Article Recommendation Engine in Help Center
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       {/* Projects */}
+
       <section className="mb-10" id="projects">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
           Projects
         </h2>
-        <div>
-          <h3 className="text-lg font-medium">
-            Hamster{" - "}
-            <a
-              href="https://hamsters-landing-page.webflow.io/"
-              className="text-color-blue-600 hover:text-blue-800 transition"
-            >
-              Website
-            </a>
-          </h3>
-          <p className="text-sm text-gray-400">
-            Personalized Knowledge Management Platform
-          </p>
-        </div>
-        <div>
-          <a
-            href="https://hamsters-landing-page.webflow.io/"
-            className="text-lg font-medium"
-          >
-            LLM Lawyer
-          </a>
-          <p className="text-sm text-gray-400">
-            AI driven platform that facilitates legal inquries
-          </p>
+        <div className="flex space-x-10">
+          <div>
+            <h3 className="text-lg font-medium flex items-center gap-2">
+              Hamster
+              <a
+                href="https://hamsters-landing-page.webflow.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 hover:text-blue-600 transition"
+                title="Visit Website"
+              >
+                <ExternalLink size={18} />
+              </a>
+            </h3>
+            <p className="text-sm text-gray-400">
+              Personalized Knowledge Management Platform
+            </p>
+          </div>
+          <div>
+            <h3 className="text-lg font-medium flex items-center gap-2">
+              LLM Lawyer
+              <a
+                href="https://hamsters-landing-page.webflow.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 hover:text-blue-600 transition"
+                title="Visit Website"
+              >
+                <ExternalLink size={18} />
+              </a>
+            </h3>
+            <p className="text-sm text-gray-400">
+              AI driven platform that facilitates legal inquiries
+            </p>
+          </div>
         </div>
       </section>
 
@@ -148,7 +201,7 @@ export default function Home() {
 
       <div className="w-full h-[800px] rounded-lg overflow-hidden shadow-md">
         <iframe
-          src="https://docs.google.com/document/d/1nOtcYWxUjB4XX4vnf_1SwHIFQk7sqKU1n4tnKG5xxbM/edit?usp=sharing"
+          src="https://docs.google.com/document/d/1nOtcYWxUjB4XX4vnf_1SwHIFQk7sqKU1n4tnKG5xxbM/preview?usp=sharing"
           title="Resume"
           className="w-full h-full"
           allow="autoplay"
