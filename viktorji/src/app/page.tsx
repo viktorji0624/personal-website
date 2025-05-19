@@ -31,10 +31,10 @@ export default function Home() {
           Hi! I&apos;m Viktor Ji, an experienced software engineer who enjoys
           building and solving real world problems. This is my personal website
           where I showcase my work and also acts a a playing ground for me to
-          experiment new technologies. I am currently pursuing a Master's degree
-          at Carnegie Mellon University - School of Computer Science, where I am
-          honing my skills in developing distributed systems and software
-          engineering.
+          experiment new technologies. I am currently pursuing my Master&apos;s
+          degree at Carnegie Mellon University - School of Computer Science,
+          where I am honing my skills in developing distributed systems and
+          software engineering.
         </div>
       </section>
 
