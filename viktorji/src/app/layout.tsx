@@ -17,29 +17,23 @@ export default function RootLayout({
       <body className="min-h-screen bg-white text-gray-900 font-sans">
         <div className="flex min-h-screen">
           {/* Sidebar */}
-          <aside className="w-72 p-8 pr-6 border-r border-gray-200 bg-black hidden md:block">
+          <aside className="sticky top-0 h-screen p-4 w-48 bg-black border-r border-gray-200">
             <div className="text-2xl font-extrabold tracking-tight mb-12">
               Navigation
             </div>
-            <nav className="flex flex-col gap-6 text-lg">
-              <Link
-                href="/"
-                className="text-white hover:text-blue-600 transition"
-              >
-                Home
-              </Link>
-              <Link
-                href="/projects"
-                className="text-white hover:text-blue-600 transition"
-              >
-                Projects
-              </Link>
-              <Link
-                href="/startups"
-                className="text-white hover:text-blue-600 transition"
-              >
-                Startups
-              </Link>
+            <nav className="flex flex-col space-y-4 p-4">
+              <a href="#about" className="hover:underline">
+                About
+              </a>
+              <a href="#education" className="hover:underline">
+                Education
+              </a>
+              <a href="#work" className="hover:underline">
+                Work Experience
+              </a>
+              <a href="#contact" className="hover:underline">
+                Contact
+              </a>
             </nav>
           </aside>
 
