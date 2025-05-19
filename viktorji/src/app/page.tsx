@@ -56,7 +56,7 @@ export default function Home() {
           Education
         </h2>
         <div className="flex items-start gap-4 mb-6">
-          <img src="/CMU.png" className="w-10 h-10 mt-1" />
+          <Image src="/CMU.png" className="w-10 h-10 mt-1" alt={"CMU LOGO"} />
           <h3 className="text-lg font-medium">
             Carnegie Mellon University - School of Computer Science
             <p className="text-sm text-gray-400">
@@ -66,7 +66,11 @@ export default function Home() {
           </h3>
         </div>
         <div className="flex items-start gap-4 mb-6">
-          <img src="/UMICH.jpg" className="w-10 h-10 mt-1" />
+          <Image
+            src="/UMICH.jpg"
+            className="w-10 h-10 mt-1"
+            alt={"UMICH LOGO"}
+          />
           <h3 className="text-lg font-medium">
             University of Michigan - Ann Arbor
             <p className="text-sm text-gray-400">
