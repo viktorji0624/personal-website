@@ -20,7 +20,7 @@ export default function RootLayout({
           {/* Sidebar */}
           <aside className="w-72 p-8 pr-6 border-r border-gray-200 bg-black hidden md:block">
             <div className="text-2xl font-extrabold tracking-tight mb-12">
-              Your Name
+              Navigation
             </div>
             <nav className="flex flex-col gap-6 text-lg">
               <Link
