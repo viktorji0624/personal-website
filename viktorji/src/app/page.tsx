@@ -4,7 +4,7 @@ import SocialLinks from "./components/socials";
 
 export default function Home() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-10">
+    <main className="max-w-4xl mx-auto px-4 py-10">
       {/* Header */}
       <header className="text-center mb-12">
         <div className="flex justify-center">
@@ -18,7 +18,6 @@ export default function Home() {
         </div>
         <h1 className="text-4xl font-bold mt-6">Viktor Ji</h1>
         <p className="text-lg text-white mt-2">Software Engineer</p>
-
         {SocialLinks()}
       </header>
 
@@ -27,14 +26,24 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
           About
         </h2>
-        <div>
-          Hi! I&apos;m Viktor Ji, an experienced software engineer who enjoys
-          building and solving real world problems. This is my personal website
-          where I showcase my work and also acts a a playing ground for me to
-          experiment new technologies. I am currently pursuing my Master&apos;s
-          degree at Carnegie Mellon University - School of Computer Science,
-          where I am honing my skills in developing distributed systems and
-          software engineering.
+        <div className="flex-col space-y-5">
+          <p>
+            Hi! I&apos;m Viktor Ji, an experienced software engineer who enjoys
+            building and solving real world problems. This is my personal
+            website where I showcase my work and also acts a a playing ground
+            for me to experiment new technologies. I am currently pursuing my
+            Master&apos;s degree at Carnegie Mellon University - School of
+            Computer Science, where I am honing my skills in developing
+            distributed systems and software engineering.
+          </p>
+          <p>
+            In my free time, I enjoy playing competitive volleyball, travelling,
+            reading History, going to the gym and playing video games.
+          </p>
+          <p className="font-bold">
+            Currently open to internship opportunities for Summer 2026 and full
+            time roles after December 2026!
+          </p>
         </div>
       </section>
 
@@ -48,7 +57,7 @@ export default function Home() {
             Carnegie Mellon University - School of Computer Science
           </h3>
           <p className="text-sm text-gray-400">
-            M.S. in Software Engineering — Dec 2026 (Expected)
+            M.S. in Software Engineering | Dec 2026 (Expected) | Pittsburgh, PA
           </p>
         </div>
         <div>
@@ -56,7 +65,7 @@ export default function Home() {
             University of Michigan - Ann Arbor
           </h3>
           <p className="text-sm text-gray-400">
-            B.S. in Computer Science — May 2022
+            B.S. in Computer Science | May 2022 | Ann Arbor, MI
           </p>
         </div>
       </section>

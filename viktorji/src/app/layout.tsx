@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Resume from "./components/resume";
 
 export const metadata: Metadata = {
   title: "Viktor Ji Website",
@@ -17,9 +18,7 @@ export default function RootLayout({
         <div className="flex min-h-screen">
           {/* Sidebar */}
           <aside className="sticky top-0 h-screen p-4 w-48 bg-black border-r border-gray-200">
-            <div className="text-2xl font-extrabold tracking-tight mb-12">
-              Navigation
-            </div>
+            {Resume()}
             <nav className="flex flex-col space-y-4 p-4">
               <a href="#about" className="hover:underline">
                 About
