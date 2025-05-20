@@ -39,7 +39,7 @@ export default function RootLayout({
           </aside>
 
           {/* Vertical Divider */}
-          <div className="w-px bg-gray-200  md:block" />
+          <div className="w-px bg-gray-700  md:block" />
 
           {/* Main Content */}
           <main className="flex-1 px-6 md:px-12 py-5">{children}</main>
