@@ -18,24 +18,33 @@ export default function RootLayout({
         <div className="flex min-h-screen ">
           {/* Sidebar */}
           <aside className="sticky top-0 h-screen p-4 w-48 bg-blackhidden md:block  ">
-            {Resume()}
             <nav className="flex flex-col space-y-4 p-4">
-              <a href="#about" className="hover:underline">
+              <a href="#about" className="hover:underline hover:text-blue-500">
                 About
               </a>
-              <a href="#education" className="hover:underline">
+              <a
+                href="#education"
+                className="hover:underline  hover:text-blue-500"
+              >
                 Education
               </a>
-              <a href="#work" className="hover:underline">
+              <a href="#work" className="hover:underline  hover:text-blue-500">
                 Work Experience
               </a>
-              <a href="#projects" className="hover:underline">
+              <a
+                href="#projects"
+                className="hover:underline  hover:text-blue-500"
+              >
                 Projects
               </a>
-              <a href="#contact" className="hover:underline">
+              <a
+                href="#contact"
+                className="hover:underline  hover:text-blue-500"
+              >
                 Contact
               </a>
             </nav>
+            {Resume()}
           </aside>
 
           {/* Vertical Divider */}

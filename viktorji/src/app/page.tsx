@@ -2,6 +2,7 @@
 import Image from "next/image";
 import SocialLinks from "./components/socials";
 import { Mail, ExternalLink } from "lucide-react";
+import Resume from "./components/resume";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
           height={400}
           className="shadow-lg object-cover rounded-2xl"
         />
-        <div className="flex-col space-y-5 ">
+        <div className="flex-col space-y-10 ">
           <h1 className="text-5xl font-bold ">Viktor Ji</h1>
           <p className="text-xl text-white mt-2">Software Engineer</p>
           {SocialLinks()}
@@ -29,13 +30,15 @@ export default function Home() {
         <ul className="flex-col space-y-3">
           <li>
             Hi! I&apos;m Viktor, an experienced software engineer who enjoys
-            building and solving real world problems. This is my personal
-            website where I showcase my work and also acts a a playing ground
-            for me to experiment with new technologies. In my free time, I enjoy
-            playing competitive volleyball, travelling, reading History, going
-            to the gym and playing video games.
+            building and solving real world problems.
           </li>
           <li>
+            I built this personal website to showcase my work and also acts a a
+            playing ground to experiment with new technologies. In my free time,
+            I enjoy playing competitive volleyball, travelling, reading History,
+            going to the gym and playing video games.
+          </li>
+          <li className="font-style: italic">
             I am currently pursuing my Master&apos;s degree at Carnegie Mellon
             University where I am honing my skills in distributed systems,
             software engineering, and artificial intelligence.
@@ -199,15 +202,18 @@ export default function Home() {
         </a>
       </section>
 
-      <div className="w-full h-[800px] rounded-lg overflow-hidden shadow-md">
+      {/* <div className="w-full h-[800px] rounded-lg overflow-hidden shadow-md">
         <iframe
           src="https://docs.google.com/document/d/1nOtcYWxUjB4XX4vnf_1SwHIFQk7sqKU1n4tnKG5xxbM/preview?usp=sharing"
           title="Resume"
           className="w-full h-full"
           allow="autoplay"
         ></iframe>
+      </div> */}
+      <div className="text-center text-gray-500">
+        ~ This site was developed using NextJs, Tailwind CSS, and deployed with
+        Vercel.
       </div>
-
       {/* Optional: Footer */}
       <footer className="text-center text-sm text-gray-400 mt-12">
         © {new Date().getFullYear()} Viktor Ji. All rights reserved.
