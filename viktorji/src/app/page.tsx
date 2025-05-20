@@ -169,7 +169,7 @@ export default function Home() {
             <h3 className="text-lg font-medium flex items-center gap-2">
               LLM Lawyer
               <a
-                href="https://immiglaw-official-git-main-edwardsungnavisxios-projects.vercel.app/"
+                href="https://www.immiglaw.co/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-300 hover:text-blue-600 transition"
