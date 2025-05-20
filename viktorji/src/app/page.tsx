@@ -2,7 +2,6 @@
 import Image from "next/image";
 import SocialLinks from "./components/socials";
 import { Mail, ExternalLink } from "lucide-react";
-import Resume from "./components/resume";
 
 export default function Home() {
   return (
