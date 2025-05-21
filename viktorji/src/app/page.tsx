@@ -184,6 +184,23 @@ export default function Home() {
               AI driven platform that facilitates legal inquiries
             </p>
           </div>
+          <div>
+            <h3 className="text-lg font-medium flex items-center gap-2">
+              Personal Website Repository
+              <a
+                href="https://github.com/viktorji0624/personal-website"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 hover:text-blue-600 transition"
+                title="Visit Website"
+              >
+                <ExternalLink size={18} />
+              </a>
+            </h3>
+            <p className="text-sm text-gray-400">
+              AI driven platform that facilitates legal inquiries
+            </p>
+          </div>
         </div>
       </section>
 
