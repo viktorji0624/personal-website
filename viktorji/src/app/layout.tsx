@@ -18,6 +18,8 @@ export default function RootLayout({
         <div className="flex min-h-screen ">
           {/* Sidebar */}
           <aside className="sticky top-0 h-screen p-4 w-48 bg-blackhidden md:block  ">
+            {Resume()}
+
             <nav className="flex flex-col space-y-4 p-4">
               <a href="#about" className="hover:underline hover:text-blue-500">
                 About
@@ -56,7 +58,6 @@ export default function RootLayout({
                 Contact
               </a>
             </nav>
-            {Resume()}
           </aside>
 
           {/* Vertical Divider */}

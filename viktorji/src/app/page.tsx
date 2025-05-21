@@ -227,11 +227,44 @@ export default function Home() {
         </h2>
         <a
           href="mailto:viktorj@andrew.cmu.edu"
-          className="hover:text-red-500 transition flex items-center gap-2"
+          className="hover:text-red-500 transition flex items-center gap-2 mb-10"
           title="Email"
         >
           <Mail size={28} /> viktorj@andrew.cmu.edu
         </a>
+        {/* Contact form */}
+        <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
+          Leave a Message
+        </h2>
+        <form
+          action="https://formsubmit.co/viktorj@andrew.cmu.edu"
+          method="POST"
+          className="flex flex-col space-y-4 justify-center"
+        >
+          {/* Protect against spam */}
+          <input type="hidden" name="_captcha" value="false" />
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            className="p-2 border border-gray-300 rounded-md"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+            rows={4}
+            className="p-2 border border-gray-300 rounded-md"
+          />
+          <button
+            type="submit"
+            className="flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md shadow transition duration-200"
+          >
+            Send
+          </button>
+        </form>
       </section>
 
       {/* <div className="w-full h-[800px] rounded-lg overflow-hidden shadow-md">
