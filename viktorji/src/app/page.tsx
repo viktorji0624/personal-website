@@ -53,8 +53,8 @@ export default function Home() {
           </li>
 
           <li className="font-bold text-yellow-400">
-            I'm currently open to internship opportunities for Summer 2026 and
-            full-time roles starting January 2027!
+            I&apos;m currently open to internship opportunities for Summer 2026
+            and full-time roles starting January 2027!
           </li>
         </ul>
       </section>

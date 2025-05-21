@@ -58,6 +58,9 @@ export default function Skills() {
             <li className="bg-yellow-600 px-3 py-1 rounded-full">Vercel</li>
             <li className="bg-yellow-600 px-3 py-1 rounded-full">Figma</li>
             <li className="bg-yellow-600 px-3 py-1 rounded-full">AWS</li>
+            <li className="bg-yellow-600 px-3 py-1 rounded-full">
+              Github Actions
+            </li>
           </ul>
         </div>
 
