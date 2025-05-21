@@ -38,6 +38,18 @@ export default function RootLayout({
                 Projects
               </a>
               <a
+                href="#skills"
+                className="hover:underline  hover:text-blue-500"
+              >
+                Skills
+              </a>
+              <a
+                href="#academics"
+                className="hover:underline  hover:text-blue-500"
+              >
+                Academics
+              </a>
+              <a
                 href="#contact"
                 className="hover:underline  hover:text-blue-500"
               >
