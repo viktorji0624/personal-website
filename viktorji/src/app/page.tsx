@@ -223,7 +223,7 @@ export default function Home() {
       {/* Contact */}
       <section className="mb-10" id="contact">
         <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
-          Feel free to reach out!
+          Email Me
         </h2>
         <a
           href="mailto:viktorj@andrew.cmu.edu"
@@ -233,7 +233,7 @@ export default function Home() {
           <Mail size={28} /> viktorj@andrew.cmu.edu
         </a>
         {/* Contact form */}
-        <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
+        <h2 className="text-2xl font-semibold mb-4  pb-1 border-gray-200">
           Leave a Message
         </h2>
         <form
@@ -247,13 +247,20 @@ export default function Home() {
           <input
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder="Name"
+            required
+            className="p-2 border border-gray-300 rounded-md"
+          />
+          <input
+            type="text"
+            name="contact"
+            placeholder="Contact Information (email or phone)"
             required
             className="p-2 border border-gray-300 rounded-md"
           />
           <textarea
             name="message"
-            placeholder="Your Message"
+            placeholder="Message"
             required
             rows={4}
             className="p-2 border border-gray-300 rounded-md"
