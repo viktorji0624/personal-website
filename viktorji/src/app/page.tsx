@@ -186,7 +186,7 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-lg font-medium flex items-center gap-2">
-              Personal Website Repository
+              Personal Website
               <a
                 href="https://github.com/viktorji0624/personal-website"
                 target="_blank"
@@ -198,7 +198,7 @@ export default function Home() {
               </a>
             </h3>
             <p className="text-sm text-gray-400">
-              AI driven platform that facilitates legal inquiries
+              Github repository for this personal website
             </p>
           </div>
         </div>
