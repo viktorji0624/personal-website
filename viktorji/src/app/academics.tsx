@@ -1,26 +1,36 @@
-// TODO: import this into main page with prop & state drilling
 "use client";
 
-import { useState } from "react";
+import { ChevronDown, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
-export default function SampleProjectsSection() {
-  const [isOpen, setIsOpen] = useState(false);
+type SampleProjectsSectionProps = {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
+};
 
+export default function SampleProjectsSection(
+  props: SampleProjectsSectionProps
+) {
   return (
     <section className="mb-10" id="academics">
-      <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
-        Sample Academic Projects
+      <h2 className="flex flex-row text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
+        Sample Academic Projects{" "}
+        <button
+          onClick={() => props.setIsOpen(!props.isOpen)}
+          className="flex items-center ml-5 text-sm text-blue-500 hover:text-blue-700 transition"
+        >
+          {props.isOpen ? (
+            <ChevronDown size={32} />
+          ) : (
+            <ChevronRight size={32} />
+          )}
+          <span className="ml-1">
+            {props.isOpen ? "Hide Projects" : "Show Projects"}
+          </span>
+        </button>
       </h2>
 
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="mb-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
-      >
-        {isOpen ? "Hide Projects" : "Show Projects"}
-      </button>
-
-      {isOpen && (
+      {props.isOpen && (
         <div className="flex flex-wrap space-x-10 space-y-5">
           <div className="flex flex-col">
             <span className="text-xl font-medium ">Mini-Instagram </span>
