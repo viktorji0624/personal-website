@@ -149,7 +149,7 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200">
           Projects
         </h2>
-        <div className="flex space-x-10">
+        <div className="flex flex-wrap space-x-10 space-y-5">
           <div>
             <h3 className="text-lg font-medium flex items-center gap-2">
               Hamster
