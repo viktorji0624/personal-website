@@ -32,27 +32,28 @@ export default function Home() {
             building and solving real world problems.
           </li>
           <li>
-            I built this personal website to showcase my work and also acts a a
-            playing ground to experiment with new technologies. In my free time,
-            I enjoy playing competitive volleyball, travelling, reading History,
-            going to the gym and playing video games.
+            I built this personal website to showcase my work and as a
+            playground to experiment with new technologies. In my free time, I
+            enjoy playing competitive volleyball, travelling, reading History,
+            going to the gym, and playing games.
           </li>
           <li className="font-style: italic">
-            I am currently pursuing my Master&apos;s degree at Carnegie Mellon
-            University where I am honing my skills in distributed systems,
-            software engineering, and artificial intelligence.
+            I am currently pursuing my Master&apos;s degree at{" "}
+            <span className="font-bold">Carnegie Mellon University</span>, where
+            I am honing my skills in distributed systems, software engineering,
+            and artificial intelligence.
           </li>
           <li>
-            I spent two years working in the Bay Area for a healthcare
-            technology company and interned at a large FinTech company prior. I
-            learned a great deal about developing production level software and
-            working in cross-functional teams. (Detailed work experience in
-            Resume)
+            Previously, I spent two years working in the Bay Area for a
+            healthcare technology company and interned at a large FinTech firm
+            prior. These experiences taught me a great deal about building
+            production-level software and collaborating with cross-functional
+            teams. (More details in Resume)
           </li>
 
           <li className="font-bold text-yellow-400">
-            Currently open to internship opportunities for Summer 2026 and full
-            time roles after December 2026!
+            I'm currently open to internship opportunities for Summer 2026 and
+            full-time roles starting January 2027!
           </li>
         </ul>
       </section>
