@@ -55,8 +55,10 @@ export default function RootLayout({
               >
                 Contact
               </a>
-              <Resume />
-              <ChineseResume />
+              <div className="flex-col space-y-2 absolute bottom-10 left-4">
+                <Resume />
+                <ChineseResume />
+              </div>
             </nav>
           </aside>
 
