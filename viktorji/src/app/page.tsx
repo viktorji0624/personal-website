@@ -57,10 +57,10 @@ export default function Home() {
             teams. (details in Resume)
           </li>
 
-          <li className="font-bold text-yellow-400">
+          {/* <li className="font-bold text-yellow-400">
             I&apos;m currently open to internship opportunities for Summer 2026
             and full-time roles starting January 2027!
-          </li>
+          </li> */}
         </ul>
       </section>
 
