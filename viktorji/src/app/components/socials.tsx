@@ -31,7 +31,7 @@ export default function SocialLinks() {
         <Github size={iconSize} />
       </a>
       <a
-        href="https://docs.google.com/document/d/1nOtcYWxUjB4XX4vnf_1SwHIFQk7sqKU1n4tnKG5xxbM/preview?usp=sharing"
+        href="RESUME-EN.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-blue-200 transition flex-col items-center"
