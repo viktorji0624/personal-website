@@ -34,10 +34,10 @@ export default function SocialLinks() {
         href="https://docs.google.com/document/d/1nOtcYWxUjB4XX4vnf_1SwHIFQk7sqKU1n4tnKG5xxbM/preview?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-blue-200 transition flex items-center gap-2"
+        className="hover:text-blue-200 transition flex-col items-center"
         title="Resume / CV"
       >
-        <FileText size={iconSize} /> <span className="text-lg">Resume</span>
+        <FileText size={iconSize} /> <span className="text-lg">CV</span>
       </a>
     </div>
   );

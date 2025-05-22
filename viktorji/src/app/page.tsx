@@ -54,7 +54,7 @@ export default function Home() {
             healthcare technology company and interned at a large FinTech firm
             prior. These experiences taught me a great deal about building
             production-level software and collaborating with cross-functional
-            teams. (More details in Resume)
+            teams. (details in Resume)
           </li>
 
           <li className="font-bold text-yellow-400">
