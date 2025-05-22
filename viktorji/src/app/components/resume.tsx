@@ -5,7 +5,7 @@ export function Resume() {
   return (
     <div className="z-50 float-left">
       <a
-        href="https://docs.google.com/document/d/1nOtcYWxUjB4XX4vnf_1SwHIFQk7sqKU1n4tnKG5xxbM/preview?usp=sharing"
+        href="RESUME-EN.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center  bg-blue-600 text-white px-2 py-2 w-31 h-11 rounded-lg shadow hover:bg-blue-700 transition"
