@@ -159,23 +159,6 @@ export default function Home() {
         <div className="flex flex-wrap space-x-10 space-y-5">
           <div>
             <h3 className="text-lg font-medium flex items-center gap-2">
-              Hamster
-              <a
-                href="https://hamsters-landing-page.webflow.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-300 hover:text-blue-600 transition"
-                title="Visit Website"
-              >
-                <ExternalLink size={18} />
-              </a>
-            </h3>
-            <p className="text-sm text-gray-400">
-              Personalized Knowledge Management Platform
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-medium flex items-center gap-2">
               LLM Lawyer
               <a
                 href="https://www.immiglaw.co/"
@@ -189,6 +172,23 @@ export default function Home() {
             </h3>
             <p className="text-sm text-gray-400">
               AI driven platform that facilitates legal inquiries
+            </p>
+          </div>
+          <div>
+            <h3 className="text-lg font-medium flex items-center gap-2">
+              Hamster
+              <a
+                href="https://hamsters-landing-page.webflow.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 hover:text-blue-600 transition"
+                title="Visit Website"
+              >
+                <ExternalLink size={18} />
+              </a>
+            </h3>
+            <p className="text-sm text-gray-400">
+              Personalized Knowledge Management Platform
             </p>
           </div>
           <div>
