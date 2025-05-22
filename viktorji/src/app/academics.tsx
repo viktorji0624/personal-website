@@ -33,7 +33,7 @@ export default function SampleProjectsSection(
       {props.isOpen && (
         <div className="flex flex-wrap space-x-10 space-y-5">
           <div className="flex flex-col">
-            <span className="text-xl font-medium ">Mini-Instagram </span>
+            <span className="text-xl font-medium ">Mini-Blog </span>
             <div className="flex items-center space-x-2">
               <p className="text-sm text-gray-400 ">
                 EECS 485, University of Michigan
@@ -199,6 +199,32 @@ export default function SampleProjectsSection(
                 profitable stock trades in real-time given a log of
                 transactions, utilizing priority queues and transition states to
                 aid its decision making.
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-xl font-medium">Game Development</span>
+            <div className="flex items-center space-x-2">
+              <p className="text-sm text-gray-400 ">
+                EECS 183 & 280, University of Michigan
+              </p>
+              <Image
+                src="/UMICH.jpg"
+                className="w-5 h-5"
+                alt="UMICH LOGO"
+                width={20}
+                height={20}
+              />
+            </div>
+            <ul className="list-disc list-inside mt-1">
+              <li>
+                Developed a mini fruit-catcher game on Arduino in C++. Designed
+                a difficulty scaling algorithmn that makes the game increasingly
+                chanllenging over time alongside a high-score record system.
+              </li>
+              <li>
+                Developed a card simulator game that plays Euchre with basic
+                programmed AI opponents.
               </li>
             </ul>
           </div>
