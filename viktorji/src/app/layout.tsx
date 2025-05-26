@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Resume, ChineseResume } from "./components/resume";
 
@@ -68,6 +69,7 @@ export default function RootLayout({
           {/* Main Content */}
           <main className="flex-1 px-6 md:px-12 py-5">{children}</main>
         </div>
+        <Analytics />
       </body>
     </html>
   );
