@@ -159,7 +159,7 @@ export default function Home() {
         <div className="flex flex-wrap space-x-10 space-y-5">
           <div>
             <h3 className="text-lg font-medium flex items-center gap-2">
-              LLM Lawyer
+              Expert AI
               <a
                 href="https://www.immiglaw.co/"
                 target="_blank"
