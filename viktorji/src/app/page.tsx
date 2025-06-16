@@ -115,7 +115,7 @@ export default function Home() {
               2022–2024, San Francisco, CA
             </p>
             <ul className="list-disc list-inside">
-              <li>Clinical Platform Engineer</li>
+              <li>Worked on Clinical and Legal products</li>
               <li>
                 <a
                   href="https://www.youtube.com/watch?v=yy3WyaaJBPo"
