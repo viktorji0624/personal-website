@@ -123,7 +123,8 @@ export default function Home() {
                   className="text-blue-300 hover:text-blue-600 transition"
                   title="Visit Website"
                 >
-                  Core contributor to the launch of CarePods
+                  Clinical Platform Engineer - Core contributor to the launch of
+                  CarePods
                 </a>
               </li>
             </ul>
@@ -171,7 +172,8 @@ export default function Home() {
               </a>
             </h3>
             <p className="text-sm text-gray-400">
-              AI driven platform that facilitates legal inquiries
+              - AI driven platform that facilitates legal inquiries.
+              <br /> - Top 10% 2025 YC batch
             </p>
           </div>
           <div>
@@ -254,7 +256,7 @@ export default function Home() {
           <input
             type="text"
             name="contact"
-            placeholder="Contact Information (email or phone)"
+            placeholder="Email"
             required
             className="p-2 border border-gray-300 rounded-md"
           />
