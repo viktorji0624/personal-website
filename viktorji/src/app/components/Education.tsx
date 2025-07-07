@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { GraduationCap, MapPin, Calendar } from "lucide-react";
 
 export default function Education() {
   const fadeInUp = {
@@ -13,10 +14,28 @@ export default function Education() {
   const staggerContainer = {
     animate: {
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.15,
       },
     },
   };
+
+  const educationData = [
+    {
+      school: "Carnegie Mellon University",
+      department: "School of Computer Science",
+      degree: "M.S. Software Engineering",
+      graduation: "Dec 2026",
+      location: "Pittsburgh, PA",
+      logo: "/CMU.png",
+    },
+    {
+      school: "University of Michigan",
+      location: "Ann Arbor, MI",
+      degree: "B.S. Computer Science",
+      graduation: "May 2022",
+      logo: "/UMICH.jpg",
+    },
+  ];
 
   return (
     <motion.section
@@ -28,51 +47,66 @@ export default function Education() {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-white/20 dark:border-gray-700/20">
-        <h2 className="text-2xl font-semibold mb-6 border-b pb-2 border-gray-200 dark:border-neutral-700">
-          Education
-        </h2>
+        <div className="flex items-center gap-3 mb-4 border-b pb-2 border-gray-200 dark:border-neutral-700">
+          <div className="p-1.5 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+            <GraduationCap className="w-5 h-5 text-blue-600 dark:text-blue-300" />
+          </div>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
+            Education
+          </h2>
+        </div>
+
         <motion.div
-          className="flex flex-col gap-6"
+          className="space-y-3"
           variants={staggerContainer}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
         >
-          <motion.div className="flex items-center gap-4" variants={fadeInUp}>
-            <Image
-              src="/CMU.png"
-              className="w-12 h-12 rounded-md border border-gray-200 dark:border-neutral-700 bg-white"
-              alt={"CMU LOGO"}
-              width={48}
-              height={48}
-            />
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                Carnegie Mellon University - School of Computer Science
-              </h3>
-              <p className="text-sm text-gray-500 dark:text-gray-300">
-                M.S. in Software Engineering | Dec 2026 (Expected) | Pittsburgh,
-                PA
-              </p>
-            </div>
-          </motion.div>
-          <motion.div className="flex items-center gap-4" variants={fadeInUp}>
-            <Image
-              src="/UMICH.jpg"
-              className="w-12 h-12 rounded-md border border-gray-200 dark:border-neutral-700 bg-white"
-              alt={"UMICH LOGO"}
-              width={48}
-              height={48}
-            />
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                University of Michigan - Ann Arbor
-              </h3>
-              <p className="text-sm text-gray-500 dark:text-gray-300">
-                B.S. in Computer Science | May 2022 | Ann Arbor, MI
-              </p>
-            </div>
-          </motion.div>
+          {educationData.map((edu, index) => (
+            <motion.div
+              key={index}
+              className="p-4 rounded-lg  dark:border-gray-700 bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm transition-all duration-300 hover:shadow-md group"
+              variants={fadeInUp}
+              whileHover={{ y: -1, scale: 1.005 }}
+            >
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <Image
+                    src={edu.logo}
+                    className="w-10 h-10 rounded-lg border border-white dark:border-gray-700 bg-white shadow-sm group-hover:scale-105 transition-transform duration-300"
+                    alt={`${edu.school} LOGO`}
+                    width={40}
+                    height={40}
+                  />
+                  <div className="flex flex-col gap-1">
+                    <h3 className="text-l font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                      {edu.school}
+                    </h3>
+                    {edu.department && (
+                      <p className="text-sm text-blue-600 dark:text-blue-300 font-medium">
+                        {edu.department}
+                      </p>
+                    )}
+                    <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                      {edu.degree}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-end space-y-1">
+                  <div className="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400">
+                    <Calendar className="w-4 h-4" />
+                    <span>{edu.graduation}</span>
+                  </div>
+                  <div className="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400">
+                    <MapPin className="w-4 h-4" />
+                    <span>{edu.location}</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </motion.section>

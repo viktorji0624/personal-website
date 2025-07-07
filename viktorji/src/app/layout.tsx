@@ -130,7 +130,7 @@ export default function RootLayout({
               </nav>
 
               {/* Resume Downloads */}
-              <div className="p-6 border-t border-gray-200/50 dark:border-gray-700/50 space-y-3">
+              <div className="p-6 border-t border-gray-200/50 dark:border-gray-700/50 space-y-2">
                 <h3 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-3">
                   Resume
                 </h3>

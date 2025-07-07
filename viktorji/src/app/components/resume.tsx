@@ -16,7 +16,7 @@ export function Resume() {
         className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-4 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border border-blue-500/20"
       >
         <FileText size={20} />
-        <span className="text-sm font-medium">Resume (EN)</span>
+        <span className="text-sm font-medium">Resume</span>
         <Download size={16} />
       </a>
     </motion.div>
@@ -37,7 +37,7 @@ export const ChineseResume = () => {
         className="flex items-center justify-center gap-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-4 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border border-red-500/20"
       >
         <FileText size={20} />
-        <span className="text-sm font-medium">简历 (CN)</span>
+        <span className="text-sm font-medium">简历</span>
         <Download size={16} />
       </a>
     </motion.div>
