@@ -1,14 +1,5 @@
 // components/Skills.tsx
-import {
-  Code,
-  Database,
-  Brain,
-  Wrench,
-  Zap,
-  Server,
-  Cloud,
-  Palette,
-} from "lucide-react";
+import { Code, Database, Zap, Server, Cloud, Palette } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Skills() {
