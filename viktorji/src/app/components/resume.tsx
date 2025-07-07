@@ -1,34 +1,45 @@
 "use client";
-import { FileText } from "lucide-react";
+import { FileText, Download } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function Resume() {
   return (
-    <div className="z-50 float-left">
+    <motion.div
+      className="w-full"
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+    >
       <a
         href="RESUME-EN.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center  bg-blue-600 text-white px-2 py-2 w-31 h-11 rounded-lg shadow hover:bg-blue-700 transition"
+        className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-4 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border border-blue-500/20"
       >
-        <FileText size={28} />
-        <span className="text-base ml-3"> Resume</span>
+        <FileText size={20} />
+        <span className="text-sm font-medium">Resume (EN)</span>
+        <Download size={16} />
       </a>
-    </div>
+    </motion.div>
   );
 }
 
 export const ChineseResume = () => {
   return (
-    <div className="z-50 float-left">
+    <motion.div
+      className="w-full"
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+    >
       <a
         href="RESUME-CN.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center  bg-red-600 text-white px-2 py-2  w-31 h-11 rounded-lg shadow hover:bg-red-800 transition"
+        className="flex items-center justify-center gap-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-4 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border border-red-500/20"
       >
-        <FileText size={28} />
-        <span className="text-base ml-3">中文简历</span>
+        <FileText size={20} />
+        <span className="text-sm font-medium">简历 (CN)</span>
+        <Download size={16} />
       </a>
-    </div>
+    </motion.div>
   );
 };
