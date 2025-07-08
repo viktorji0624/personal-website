@@ -24,7 +24,7 @@ export default function Projects() {
       description:
         "AI-driven platform that facilitates legal inquiries and provides intelligent assistance to legal questions using advanced language models.",
       demo: "/Experts AI Demo2.mp4",
-      website: "https://experts-ai.vercel.app/",
+      website: "https://experts-ai.pro",
       tech: [
         "Top 10% Y Combinator Summer 2025",
         "CMU Swartz Startup",
