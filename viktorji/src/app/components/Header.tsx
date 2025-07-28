@@ -27,9 +27,8 @@ export default function Header() {
         <p className="text-lg md:text-xl text-blue-700 dark:text-blue-300 font-medium">
           Software Engineer
         </p>
-        <p className="text-base text-gray-500 dark:text-gray-300 max-w-md text-center lg:text-left">
-          Building elegant, scalable solutions and exploring the intersection of
-          software engineering and AI.
+        <p className="text-base text-gray-500 dark:text-gray-300 max-w-md text-center lg:text-left italic">
+          Exploring the intersection of software engineering and AI.
         </p>
         <div className="mt-2">{SocialLinks()}</div>
       </div>
