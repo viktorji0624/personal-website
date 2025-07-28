@@ -77,13 +77,13 @@ export default function AcademicProjects() {
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.5, ease: "easeOut" },
+    transition: { duration: 0.25, ease: "easeOut" },
   };
 
   const staggerContainer = {
     animate: {
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.05,
       },
     },
   };
@@ -95,12 +95,10 @@ export default function AcademicProjects() {
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
     >
-      <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-white/20 dark:border-gray-700/20">
-        <h2 className="text-2xl font-semibold mb-6 border-b pb-2 border-gray-200 dark:border-neutral-700">
-          Academic Projects
-        </h2>
+      <div>
+        <h2 className="text-2xl font-semibold mb-6">Academic Projects</h2>
 
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
@@ -112,7 +110,7 @@ export default function AcademicProjects() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 shadow-md hover:shadow-lg transition-all duration-200 border border-white/20 dark:border-gray-700/20 group"
+              className="rounded-lg p-4 transition-all duration-200 group"
               variants={fadeInUp}
             >
               <div className="flex items-start gap-3 mb-3">

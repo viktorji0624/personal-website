@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 export default function Header() {
   return (
     <motion.header
-      className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-10 bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm shadow-lg rounded-2xl p-8 border border-white/20 dark:border-gray-700/20"
+      className="flex flex-col lg:flex-row items-center gap-8 mb-10 mt-10"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
       id="home"
     >
       <Image

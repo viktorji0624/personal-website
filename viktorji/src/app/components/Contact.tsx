@@ -11,12 +11,10 @@ export default function Contact() {
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
     >
-      <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-white/20 dark:border-gray-700/20">
-        <h2 className="text-2xl font-semibold mb-4 border-b pb-1 border-gray-200 dark:border-neutral-700">
-          Email Me
-        </h2>
+      <div>
+        <h2 className="text-2xl font-semibold mb-4">Email Me</h2>
         <a
           href="mailto:viktorj@andrew.cmu.edu"
           className="hover:text-red-500 transition flex items-center gap-2 mb-6 text-gray-700 dark:text-gray-200"
@@ -26,9 +24,7 @@ export default function Contact() {
         </a>
 
         {/* Contact form */}
-        <h2 className="text-2xl font-semibold mb-4 pb-1 border-gray-200 dark:border-neutral-700">
-          Leave a Message
-        </h2>
+        <h2 className="text-2xl font-semibold mb-4">Leave a Message</h2>
         <form
           action="https://formsubmit.co/viktorj@andrew.cmu.edu"
           method="POST"

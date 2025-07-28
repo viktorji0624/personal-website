@@ -33,10 +33,10 @@ export default function RootLayout({
       <body className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-white font-sans">
         <div className="flex min-h-screen">
           {/* Sidebar */}
-          <aside className="sticky top-0 h-screen w-64 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-r border-gray-200/50 dark:border-gray-700/50 shadow-xl hidden md:block">
+          <aside className="sticky top-0 h-screen w-64 hidden md:block">
             <div className="flex flex-col h-full">
               {/* Logo/Header */}
-              <div className="p-6 border-b border-gray-200/50 dark:border-gray-700/50">
+              <div className="p-6">
                 <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Viktor Ji
                 </h1>
@@ -130,10 +130,7 @@ export default function RootLayout({
               </nav>
 
               {/* Resume Downloads */}
-              <div className="p-6 border-t border-gray-200/50 dark:border-gray-700/50 space-y-2">
-                <h3 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-3">
-                  Resume
-                </h3>
+              <div className="p-6 space-y-2">
                 <Resume />
                 <ChineseResume />
               </div>
@@ -142,9 +139,7 @@ export default function RootLayout({
 
           {/* Vertical Divider */}
           <div className="relative hidden md:block">
-            <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-gray-300 dark:via-gray-600 to-transparent" />
-            <div className="absolute top-1/2 left-0 w-3 h-3 bg-blue-500 rounded-full transform -translate-x-1/2 -translate-y-1/2 shadow-lg" />
-            <div className="absolute top-1/2 left-0 w-1 h-1 bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2" />
+            <div className="absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-gray-300/30 dark:via-gray-600/30 to-transparent" />
           </div>
 
           {/* Main Content */}

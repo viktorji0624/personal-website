@@ -7,13 +7,13 @@ export default function Projects() {
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.3, ease: "easeOut" },
   };
 
   const staggerContainer = {
     animate: {
       transition: {
-        staggerChildren: 0.15,
+        staggerChildren: 0.08,
       },
     },
   };
@@ -93,12 +93,10 @@ export default function Projects() {
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
     >
-      <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-white/20 dark:border-gray-700/20">
-        <h2 className="text-2xl font-semibold mb-6 border-b pb-2 border-gray-200 dark:border-neutral-700">
-          Featured Projects
-        </h2>
+      <div>
+        <h2 className="text-2xl font-semibold mb-6">Featured Projects</h2>
         <motion.div
           className="grid grid-cols-1 lg:grid-cols-2 gap-8"
           variants={staggerContainer}
@@ -109,7 +107,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className={`bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-white/20 dark:border-gray-700/20 overflow-hidden group ${
+              className={`rounded-xl transition-all duration-300 overflow-hidden group ${
                 project.featured ? "lg:col-span-2" : ""
               }`}
               variants={fadeInUp}

@@ -8,13 +8,13 @@ export default function Education() {
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.3, ease: "easeOut" },
   };
 
   const staggerContainer = {
     animate: {
       transition: {
-        staggerChildren: 0.15,
+        staggerChildren: 0.08,
       },
     },
   };
@@ -44,13 +44,10 @@ export default function Education() {
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
     >
-      <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-white/20 dark:border-gray-700/20">
-        <div className="flex items-center gap-3 mb-4 border-b pb-2 border-gray-200 dark:border-neutral-700">
-          <div className="p-1.5 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-            <GraduationCap className="w-5 h-5 text-blue-600 dark:text-blue-300" />
-          </div>
+      <div>
+        <div className="flex items-center gap-3 mb-4">
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
             Education
           </h2>
@@ -66,7 +63,7 @@ export default function Education() {
           {educationData.map((edu, index) => (
             <motion.div
               key={index}
-              className="p-4 rounded-lg  dark:border-gray-700 bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm transition-all duration-300 hover:shadow-md group"
+              className="p-4 rounded-lg transition-all duration-300 group"
               variants={fadeInUp}
               whileHover={{ y: -1, scale: 1.005 }}
             >
