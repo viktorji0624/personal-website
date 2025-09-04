@@ -23,13 +23,10 @@ export default function About() {
             traveling, reading history, going to the gym, and gaming.
           </li>
           <li className="italic">
-            I am currently pursuing my Master&apos;s in{" "}
-            <span className="font-bold text-blue-700 dark:text-blue-300">
-              Carnegie Mellon University
-            </span>
-            , focusing on distributed systems, software engineering, and AI. I
-            previously worked at a healthcare tech company in the Bay Area and
-            interned at a leading FinTech firm, where I gained hands-on
+            I am currently pursuing my Master&apos;s at Carnegie Mellon
+            University, focusing on distributed systems, software engineering,
+            and AI. I previously worked at a healthcare tech company in the Bay
+            Area and interned at a leading FinTech firm, where I gained hands-on
             experience developing production-grade software and collaborating
             with cross-functional teams.
           </li>
