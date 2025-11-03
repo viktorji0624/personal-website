@@ -63,7 +63,7 @@ export default function WorkExperience() {
                   San Francisco, CA
                 </p>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Jul 2022 — Mar 2024
+                  2022 — 2024
                 </p>
               </div>
             </div>
