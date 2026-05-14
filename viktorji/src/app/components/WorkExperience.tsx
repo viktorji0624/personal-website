@@ -37,6 +37,66 @@ export default function WorkExperience() {
           viewport={{ once: true }}
         >
           <motion.div
+            className="bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-200 border border-white/20 dark:border-gray-700/20"
+            variants={fadeInUp}
+          >
+            <div className="flex items-start justify-between mb-4">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/amazon.png"
+                  alt="Amazon Logo"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 rounded-lg object-contain"
+                />
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    Amazon
+                  </h3>
+                  <p className="text-lg text-orange-600 dark:text-orange-300 font-medium">
+                    Software Engineer Intern (Incoming)
+                  </p>
+                </div>
+              </div>
+              <div className="text-right">
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  United States
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Jun 2026 — Aug 2026
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="space-y-3">
+                <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
+                  Team:
+                </h4>
+                <ul className="list-disc list-inside text-gray-700 dark:text-gray-200 text-sm space-y-2 ml-4">
+                  <li>
+                    Joining Amazon&apos;s Distributed SQL team for a Summer 2026
+                    internship focused on large-scale database infrastructure
+                    and reliability.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 text-xs rounded-full border border-orange-200 dark:border-orange-700">
+                  Distributed SQL
+                </span>
+                <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 text-xs rounded-full border border-orange-200 dark:border-orange-700">
+                  Database Infrastructure
+                </span>
+                <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 text-xs rounded-full border border-orange-200 dark:border-orange-700">
+                  Summer 2026
+                </span>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
             className="rounded-lg p-6 transition-all duration-200"
             variants={fadeInUp}
           >
