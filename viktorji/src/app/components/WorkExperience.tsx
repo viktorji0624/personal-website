@@ -70,9 +70,9 @@ export default function WorkExperience() {
 
             <div className="space-y-4">
               <div className="space-y-3">
-                <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
+                {/* <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
                   Team:
-                </h4>
+                </h4> */}
                 <ul className="list-disc list-inside text-gray-700 dark:text-gray-200 text-sm space-y-2 ml-4">
                   <li>
                     Joining Amazon&apos;s Distributed SQL team for a Summer 2026
