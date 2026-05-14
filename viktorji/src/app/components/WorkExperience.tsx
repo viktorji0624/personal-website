@@ -51,16 +51,16 @@ export default function WorkExperience() {
                 />
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                    Amazon
+                    Amazon Web Services
                   </h3>
                   <p className="text-lg text-orange-600 dark:text-orange-300 font-medium">
-                    Software Engineer Intern (Incoming)
+                    Software Engineer Intern
                   </p>
                 </div>
               </div>
               <div className="text-right">
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  United States
+                  Seattle, WA
                 </p>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Jun 2026 — Aug 2026
