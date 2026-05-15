@@ -5,10 +5,17 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function AcademicProjects() {
+  const schoolLogos: Record<string, string> = {
+    "umich": "/UMICH.jpg",
+    "cmu": "/CMU.jpg",
+    // Add more schools as needed
+  };
+
   const projects = [
       {
       title: "Distributed Bookstore",
-      course: "CMU class",
+      course: "Engineering Data Intensive Applications",
+      school: "cmu",
       icon: <Database size={20} />,
       description: "Distributed REST microservices platform on AWS",
       highlights: [
@@ -20,6 +27,7 @@ export default function AcademicProjects() {
     {
       title: "Mini-Blog",
       course: "EECS 485, University of Michigan",
+      school: "umich",
       icon: <Code size={20} />,
       description: "Full-stack web application with REST API",
       highlights: [
@@ -31,6 +39,7 @@ export default function AcademicProjects() {
     {
       title: "Map-Reduce Search Engine",
       course: "EECS 485, University of Michigan",
+      school: "umich",
       icon: <Search size={20} />,
       description: "Distributed search engine with PageRank",
       highlights: [
@@ -42,6 +51,7 @@ export default function AcademicProjects() {
     {
       title: "LC-2K Assembly Simulator",
       course: "EECS 370, University of Michigan",
+      school: "umich",
       icon: <Cpu size={20} />,
       description: "Computer architecture simulator",
       highlights: [
@@ -53,6 +63,7 @@ export default function AcademicProjects() {
     {
       title: "Quality Assurance & Defect Detector",
       course: "EECS 481, University of Michigan",
+      school: "umich",
       icon: <Bug size={20} />,
       description: "Software testing and debugging tools",
       highlights: [
@@ -64,6 +75,7 @@ export default function AcademicProjects() {
     {
       title: "Algorithm Simulators",
       course: "EECS 281, University of Michigan",
+      school: "umich",
       icon: <Database size={20} />,
       description: "Multiple algorithm implementations",
       highlights: [
@@ -75,6 +87,7 @@ export default function AcademicProjects() {
     {
       title: "Game Development",
       course: "EECS 183 & 280, University of Michigan",
+      school: "umich",
       icon: <Gamepad2 size={20} />,
       description: "Interactive games and simulations",
       highlights: [
@@ -136,13 +149,15 @@ export default function AcademicProjects() {
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       {project.course}
                     </p>
-                    <Image
-                      src="/UMICH.jpg"
-                      className="w-4 h-4 rounded"
-                      alt="UMICH LOGO"
-                      width={16}
-                      height={16}
-                    />
+                    {schoolLogos[project.school] && (
+                      <Image
+                        src={schoolLogos[project.school]}
+                        className="w-4 h-4 rounded"
+                        alt={`${project.school} LOGO`}
+                        width={16}
+                        height={16}
+                      />
+                    )}
                   </div>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">
                     {project.description}
