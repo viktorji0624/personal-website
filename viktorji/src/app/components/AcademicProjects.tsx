@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function AcademicProjects() {
   const schoolLogos: Record<string, string> = {
     "umich": "/UMICH.jpg",
-    "cmu": "/CMU.jpg",
+    "cmu": "/CMU.png",
     // Add more schools as needed
   };
 
