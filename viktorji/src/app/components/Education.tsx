@@ -80,11 +80,11 @@ export default function Education() {
                     <h3 className="text-l font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                       {edu.school}
                     </h3>
-                    {edu.department && (
+                    {/* {edu.department && (
                       <p className="text-sm text-blue-600 dark:text-blue-300 font-medium">
                         {edu.department}
                       </p>
-                    )}
+                    )} */}
                     <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
                       {edu.degree}
                     </p>
