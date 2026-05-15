@@ -6,6 +6,17 @@ import { motion } from "framer-motion";
 
 export default function AcademicProjects() {
   const projects = [
+      {
+      title: "Distributed Bookstore",
+      course: "CMU class",
+      icon: <Database size={20} />,
+      description: "Distributed REST microservices platform on AWS",
+      highlights: [
+        "EC2, ALB, RDS Aurora, EKS, CloudFormation",
+        "Circuit breaker and Kafka integration",
+        "Docker containerization and Kubernetes deployment",
+      ],
+    },
     {
       title: "Mini-Blog",
       course: "EECS 485, University of Michigan",

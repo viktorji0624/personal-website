@@ -21,8 +21,8 @@ export default function Education() {
 
   const educationData = [
     {
-      school: "Carnegie Mellon University",
-      department: "School of Computer Science",
+      school: "Carnegie Mellon University - School of Computer Science",
+      // department: "School of Computer Science",
       degree: "M.S. Software Engineering",
       graduation: "Dec 2026",
       location: "Pittsburgh, PA",
