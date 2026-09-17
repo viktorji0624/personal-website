@@ -79,6 +79,9 @@ export default function WorkExperience() {
                     internship focused on large-scale database infrastructure
                     and reliability.
                   </li>
+                  <li>
+                    Change Data Capture Service + Data Snapshotting
+                  </li>
                 </ul>
               </div>
 
